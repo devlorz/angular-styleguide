@@ -21,7 +21,8 @@ Angular Style Guide แปล สรุป เรียบเรียงจา�
 การประกาศ 1 Component ต่อไฟล์จึงทำให้ Reuse ได้ง่ายกว่า อ่าน Code ง่ายกว่า และผิดพลาดน้อยกว่า
 
 **ตัวอย่างที่ไม่ดี:**
-***app/heroes/hero.component.ts***
+
+app/heroes/hero.component.ts
 ```typescript
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserModule } from '@angular/platform-browser';
@@ -72,10 +73,24 @@ function getHeroes(): Promise<Hero[]> {
 ```
 
 ### Small functions
+สร้างฟังก์ชั่นที่มีขนาดเล็ก โดย 1 ฟังก์ชั่นไม่ควรเกิน 75 บรรทัด
+ฟังก์ชั่นเล็กมีข้อดีคือ เทสง่าย reuse ง่าย อ่านง่าย ดูแลง่าย เกิดบัคยาก
 
 **[⬆ back to top](#สารบัญ)**
 
 ## Naming
+### General Naming Guidelines
+### Separate file names with dots and dashes
+### Symbols and file names
+### Service names
+### Bootstrapping
+### Directive selectors
+### Custom prefix for components
+### Custom prefix for directives
+### Pipe names
+### Unit test file names
+### End-to-End (E2E) test file names
+### Angular NgModule names
 
 **[⬆ back to top](#สารบัญ)**
 
